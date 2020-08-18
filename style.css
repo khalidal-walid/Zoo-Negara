@@ -1,0 +1,78 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.s1 {
+  /* background-color: #2196F3; */
+  height: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 90%;
+  grid-template-rows: 100%;
+  grid-template-areas: 'left-column right-column';
+}
+
+.container > .left-column {
+  background-color: yellow;
+}
+
+.container > .right-column {
+  background-color: gray;
+}
+
+.right-column {
+  grid-area: right-column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1em;
+}
+
+.left-column {
+  grid-area: left-column;
+}
+
+.content {
+  display: grid;
+  grid-template-areas: 
+  'nav nav'
+  'left-content right-content';
+  grid-gap: 1em ;
+  margin: 5px;
+}
+
+.nav-content {
+  grid-area: nav;
+}
+
+.left-content {
+  grid-area: left-content;
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 20px;
+}
+
+.right-content {
+  grid-area: right-content;
+}
+
+.activity {
+  display: grid;
+}
+
+.activity > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  margin: 5px;
+  padding: 20px 0;
+  border-radius: 20px;
+}
+
