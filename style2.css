@@ -1,0 +1,58 @@
+:root {
+  --primary-color: #9d4117;
+  --secondary-color: #e86741;
+  --button-color: #1c2725;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: var(--primary-color);
+  font-family: sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+}
+
+.intro {
+  width: 60%;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 5rem;
+
+}
+
+.btn {
+  background: var(--button-color);
+  color: var(--secondary-color);
+  padding: 0.8rem 3.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  opacity: 80%;;
+}
+
+

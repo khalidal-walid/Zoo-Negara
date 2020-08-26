@@ -1,7 +1,14 @@
+:root {
+  --primary-color: #9d4117;
+  --secondary-color: #e86741;
+}
+
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+  background-color: var(--primary-color);
+  font-family: sans-serif;
 }
 
 img {
@@ -23,11 +30,11 @@ img {
 }
 
 .container > .left-column {
-  background-color: yellow;
+  background-color: var(--secondary-color);
 }
 
 .container > .right-column {
-  background-color: gray;
+  background-color: var(--primary-color);
 }
 
 .right-column {
