@@ -49,6 +49,7 @@ img {
   display: grid;
   grid-template-columns: 1fr;
   height: 30%;
+  cursor: pointer;
 }
 
 .left-column {
